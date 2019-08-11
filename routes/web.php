@@ -17,11 +17,11 @@ Route::post('/userregister', 'UsersController@store');
 
 Route::get('/', 'UsersController@index');
 
-Route::get('/thx', 'UsersController@thx');
+// Route::get('/thx', 'UsersController@thx');
 
 /**
 * 人を削除：処理
 */
-Route::delete('/book/{book}', function (Book $book) {
+Route::delete('/user/{user}', function (User $user) {
     //
 });
