@@ -35,7 +35,7 @@ class UsersController extends Controller
         $users->sex = $request->sex;
         $users->nationality = $request->nationality;
         $users->save(); 
-        // return redirect('/thx');
+        return "hogehoge";
     }
     
     // public function thx(){
