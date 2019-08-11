@@ -4,10 +4,7 @@ window.onload = function (e) {
     liff.init(function (data) {
         initializeApp(data);
     });
-    
-     document.getElementById('send_message').addEventListener('click', function () {
-        // https://developers.line.me/ja/reference/liff/#liffsendmessages()
-        liff.sendMessages([{
+    liff.sendMessages([{
             type: 'text',
             text: "テキストメッセージの送信"
         }, {
@@ -19,7 +16,7 @@ window.onload = function (e) {
         }).catch(function (error) {
             window.alert("Error sending message: " + error);
         });
-    });
+
 };
 
 
