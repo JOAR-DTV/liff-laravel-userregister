@@ -4,14 +4,17 @@ window.onload = function (e) {
     liff.init(function (data) {
         initializeApp(data);
     });
-    liff.sendMessages([{
-            type: 'text',
-            text: "テキストメッセージの送信"
-        }]).then(function () {
-            window.alert("送信完了");
-        }).catch(function (error) {
-            window.alert("Error sending message: " + error);
-        });
+    
+    liff.closeWindow();
+    
+    // liff.sendMessages([{
+    //         type: 'text',
+    //         text: "テキストメッセージの送信"
+    //     }]).then(function () {
+    //         window.alert("送信完了");
+    //     }).catch(function (error) {
+    //         window.alert("Error sending message: " + error);
+    //     });
 
 };
 
