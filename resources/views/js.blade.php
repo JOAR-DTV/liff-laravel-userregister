@@ -7,5 +7,6 @@
 <script src="{{ asset('/js/liff.js') }}"></script>
 </head>
 <body>
+    hogehoge
 </body>
 </html>
