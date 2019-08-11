@@ -1,16 +1,27 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+use App\User;
+use Illuminate\Http\Request;
 
+/**
+* ユーザー表示(userregister.blade.php)
+*/
 Route::get('/', function () {
-    return view('userresister');
+    //books.blade.phpを読み込む
+});
+
+/**
+* 人を追加：処理
+*/
+Route::post('/userregister', 'UsersController@store');
+
+Route::get('/', 'UsersController@index');
+
+Route::get('/thx', 'UsersController@thx');
+
+/**
+* 人を削除：処理
+*/
+Route::delete('/book/{book}', function (Book $book) {
+    //
 });
