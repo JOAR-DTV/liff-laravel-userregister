@@ -7,10 +7,6 @@ window.onload = function (e) {
     liff.sendMessages([{
             type: 'text',
             text: "テキストメッセージの送信"
-        }, {
-            type: 'sticker',
-            packageId: '2',
-            stickerId: '144'
         }]).then(function () {
             window.alert("送信完了");
         }).catch(function (error) {
